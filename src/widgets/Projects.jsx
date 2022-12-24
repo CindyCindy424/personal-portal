@@ -1,24 +1,25 @@
 import React from 'react'
 import ChickenGame from '../assets/ChickenGame.png'
+import sinPro from '../assets/sinpro.png'
 
 const products = [
   {
     id: 1,
-    name: 'Company Portal Website Project',
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    name: 'Portal Website Program',
+    href: 'http://106.14.156.67:9876/',
+    imageSrc: sinPro,
+    imageAlt: "portal website",
     price: '',
-    color: 'Black',
+    color: 'A web program developed for a start-up\'s portal with React + tailwind & Java & MySQL',
   },
   {
     id: 2,
     name: 'web_online_game',
     href: 'https://cindycindy424.github.io/WebOnlineGames/cross-the-day-GAME01/index.html',
     imageSrc: ChickenGame,
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "web online game",
     price: '',
-    color: 'Black',
+    color: 'An online game developed with Three.js',
   },
   {
     id: 3,
@@ -66,10 +67,10 @@ function Projects() {
 
         </div> */}
 
-        <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
           {products.map((product) => (
             <div key={product.id} className="group relative">
-              <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+              <div className="min-h-100 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-100">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
